@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biomed-ml-workflows"
+version = "0.1.0"
+description = "Reproducible biomedical machine-learning workflows and scientific visualization"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+authors = [
+  {name = "xuankun zheng"},
+]
+dependencies = [
+  "matplotlib==3.11.1",
+  "numpy==2.5.2",
+  "torch==2.12.1",
+]
+
+[project.optional-dependencies]
+imaging = [
+  "monai==1.6.0",
+  "scikit-learn==1.9.0",
+]
+survival = [
+  "monai==1.6.0",
+  "pandas==3.0.5",
+  "pycox==0.3.0",
+  "scikit-learn==1.9.0",
+  "torchtuples==0.2.2",
+]
+all = [
+  "monai==1.6.0",
+  "pandas==3.0.5",
+  "pycox==0.3.0",
+  "scikit-learn==1.9.0",
+  "torchtuples==0.2.2",
+  "torchvision==0.27.1",
+]
+test = [
+  "pytest==8.3.5",
+  "PyYAML==6.0.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/secdelic/biomed-ml-workflows"
+Repository = "https://github.com/secdelic/biomed-ml-workflows"
+Issues = "https://github.com/secdelic/biomed-ml-workflows/issues"
+
+[tool.setuptools.packages.find]
+include = ["biomed_ml_workflows*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

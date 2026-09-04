@@ -1,0 +1,30 @@
+{
+  "title": "BioMed ML Workflows: Reproducible Biomedical Machine Learning Analysis and Visualization Library",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "zheng, xuankun",
+      "orcid": "0009-0006-7036-7811"
+    }
+  ],
+  "description": "Reproducible biomedical machine-learning, medical-image deep-learning, survival-analysis, and scientific-visualization workflows.",
+  "license": "MIT",
+  "version": "0.1.0",
+  "keywords": [
+    "biomedical machine learning",
+    "deep learning",
+    "medical imaging",
+    "survival analysis",
+    "scientific visualization",
+    "reproducible research",
+    "Python"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/secdelic/biomed-ml-workflows",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
+

@@ -1,0 +1,1 @@
+"""Complete synthetic figure gallery."""

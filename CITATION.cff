@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "BioMed ML Workflows: Reproducible Biomedical Machine Learning Analysis and Visualization Library"
+authors:
+  - given-names: xuankun
+    family-names: zheng
+    orcid: "https://orcid.org/0009-0006-7036-7811"
+version: 0.1.0
+repository-code: "https://github.com/secdelic/biomed-ml-workflows"
+license: MIT
+keywords:
+  - biomedical machine learning
+  - deep learning
+  - medical imaging
+  - survival analysis
+  - scientific visualization
+  - reproducible research
+  - Python
+
