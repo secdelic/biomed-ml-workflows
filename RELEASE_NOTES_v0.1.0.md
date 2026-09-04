@@ -1,5 +1,3 @@
-# BioMed ML Workflows v0.1.0
-
 ## Scope
 
 Reproducible biomedical machine-learning workflows and scientific visualization for Python 3.12.
@@ -29,4 +27,3 @@ MIT.
 ## Citation
 
 Use `CITATION.cff`. No DOI is claimed before an archival service issues one.
-
