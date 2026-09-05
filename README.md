@@ -53,6 +53,11 @@ This runs all three workflows with fixed synthetic data and writes ignored outpu
 
 Ask Codex to read [AGENTS.md](AGENTS.md), preserve the study definitions, select an existing workflow, validate its input/output contract, and use existing figure functions. See [docs/CODEX_USAGE.md](docs/CODEX_USAGE.md).
 
+## Chinese documentation
+
+- [中文正式使用说明书](docs/USER_GUIDE_ZH_CN.md)
+- [Codex中文提示词](docs/CODEX_PROMPTS_ZH_CN.md)
+
 ## Synthetic examples
 
 Generate one demonstration for every public figure function:
