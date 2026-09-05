@@ -4,7 +4,7 @@ BioMed ML Workflows makes technical reproducibility explicit but cannot guarante
 
 ## Certified environment
 
-Version 0.1.0 is certified only on Python 3.12. The installation command is:
+Version 0.1.1 is certified only on Python 3.12. The installation command is:
 
 ```bash
 python -m pip install -e ".[all,test]"

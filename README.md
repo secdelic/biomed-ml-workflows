@@ -2,7 +2,7 @@
 
 Reproducible Python workflows for biomedical machine learning, medical-image deep learning, survival analysis, and scientific visualization.
 
-Version: **0.1.0** · Tested with **Python 3.12**
+Version: **0.1.1** · Tested with **Python 3.12**
 
 ## Scope
 

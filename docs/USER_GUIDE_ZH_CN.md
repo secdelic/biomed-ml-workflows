@@ -6,11 +6,11 @@ BioMed ML Workflows 是科研分析执行工具，不是自动研究设计器。
 
 ## 2. 当前版本和适用范围
 
-Version: **0.1.0**。Tested Python: **Python 3.12**；当前安装要求为 `>=3.12,<3.13`，不是“其他 Python 版本也已支持”。精确依赖见 [pyproject.toml](../pyproject.toml)。
+Version: **0.1.1**。Tested Python: **Python 3.12**；当前安装要求为 `>=3.12,<3.13`，不是“其他 Python 版本也已支持”。精确依赖见 [pyproject.toml](../pyproject.toml)。
 
 正式分析范围限于上述三条工作流。XGBoost、LightGBM、Random Forest、SVM、KNN 尚未正式集成；没有 DCA、NRI、IDI 或 SHAP 计算工作流。能画特征重要性、聚类或预测诊断图，不代表集成了对应模型训练或解释计算。其他限制见 [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md)。
 
-本说明书描述 v0.1.0 的软件接口；这是发布后更新到 main 的文档，不声称新增文字已包含在冻结的 v0.1.0 release 中。
+本说明书描述 v0.1.1 的软件接口，与 v0.1.0 保持行为兼容；v0.1.1 将同步后的文档纳入版本快照，冻结的 v0.1.0 release 不包含此次扩展文档。
 
 ## 3. 安装
 
@@ -44,7 +44,7 @@ python --version
 pytest
 ```
 
-CPU 可运行测试及全部示例，不要求 GPU。GPU 使用取决于本机 PyTorch/CUDA 环境，不保证跨设备数值完全一致。安装失败时先核对解释器、平台依赖与网络，不擅自放宽版本锁定。上述命令安装当前 main；如研究要求冻结版本，在创建环境前明确执行 `git checkout v0.1.0`，但该标签不包含本轮新增文档。
+CPU 可运行测试及全部示例，不要求 GPU。GPU 使用取决于本机 PyTorch/CUDA 环境，不保证跨设备数值完全一致。安装失败时先核对解释器、平台依赖与网络，不擅自放宽版本锁定。上述命令安装当前 main；如研究要求冻结版本，在 v0.1.1 发布后、创建环境前明确执行 `git checkout v0.1.1`，该版本快照包含同步后的中文文档。
 
 ## 4. 推荐项目目录
 
@@ -459,7 +459,7 @@ relative risk不是probability；绘制生存曲线时核对[N,T]到[T,N]的方�
 以下是记录模板，不含研究结果；将占位符替换为本次实际运行信息：
 
 ```text
-Software: BioMed ML Workflows v0.1.0
+Software: BioMed ML Workflows v0.1.1
 Repository: https://github.com/secdelic/biomed-ml-workflows
 Version/tag and exact commit: <实际tag及git rev-parse HEAD>
 Python: <实际3.12.x>
@@ -494,7 +494,7 @@ Figure generation: <函数、输入结果版本、参数和文件路径>
 
 **Q6 能否直接输入 CSV？** 没有通用 CSV loader 或“CSV 路径 → 三条 workflow”的入口。需 study-specific adapter 读取文件、核对变量、缺失与行对应关系，再转换成 API 所需 arrays/tensors/DataLoader/features。
 
-**Q7 可以做 XGBoost 吗？** v0.1.0 尚未正式集成 XGBoost workflow；可以绘制兼容的既有结果，不等于软件实现了该模型。
+**Q7 可以做 XGBoost 吗？** v0.1.1 尚未正式集成 XGBoost workflow；可以绘制兼容的既有结果，不等于软件实现了该模型。
 
 **Q8 可以直接用于论文吗？** 软件实现可作为分析工具，但研究方案、数据质量、统计假设、校准、验证和解释仍须研究者负责，不能以 synthetic examples 替代真实研究证据。
 
@@ -502,4 +502,4 @@ Figure generation: <函数、输入结果版本、参数和文件路径>
 
 [README 中文入口](../README.md#chinese-documentation) 链接本说明书和 [Codex中文提示词](CODEX_PROMPTS_ZH_CN.md)。GitHub 当前文档见 [main 分支](https://github.com/secdelic/biomed-ml-workflows/tree/main/docs)。
 
-main 可以包含发布后的新版文档；冻结的 v0.1.0 tag/release 不随之改变。本轮不移动标签、不重建 release，也不创建 v0.1.1。如果以后要求归档版本包含新版说明书，可由 Researcher 另行决定是否发布 v0.1.1 documentation release；这不是本轮自动动作。
+v0.1.1 是文档与使用说明同步版本，不改变分析、绘图或模型行为；冻结的 v0.1.0 tag/release 不随之改变。版本发布及 Zenodo 归档状态以 [PUBLIC_RELEASE_STATUS.md](../PUBLIC_RELEASE_STATUS.md) 的实际记录为准，GitHub 发布不等于 Zenodo 已归档。

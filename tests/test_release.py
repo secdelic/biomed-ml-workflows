@@ -26,9 +26,9 @@ def public_files() -> list[Path]:
 
 def test_version_and_required_public_files() -> None:
     configuration = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
-    assert biomed_ml_workflows.__version__ == "0.1.0"
-    assert configuration["project"]["version"] == "0.1.0"
-    assert (ROOT / "VERSION").read_text(encoding="utf-8").strip() == "0.1.0"
+    assert biomed_ml_workflows.__version__ == "0.1.1"
+    assert configuration["project"]["version"] == "0.1.1"
+    assert (ROOT / "VERSION").read_text(encoding="utf-8").strip() == "0.1.1"
     required = (
         "README.md",
         "AGENTS.md",
@@ -37,7 +37,7 @@ def test_version_and_required_public_files() -> None:
         "CITATION.cff",
         ".zenodo.json",
         "CHANGELOG.md",
-        "RELEASE_NOTES_v0.1.0.md",
+        "RELEASE_NOTES_v0.1.1.md",
         "PUBLIC_RELEASE_STATUS.md",
         "docs/USER_GUIDE_ZH_CN.md",
         "docs/FIGURE_CAPABILITIES.md",
@@ -65,7 +65,7 @@ def test_citation_and_archive_metadata_are_valid_and_doi_free() -> None:
     citation = yaml.safe_load((ROOT / "CITATION.cff").read_text(encoding="utf-8"))
     assert citation["cff-version"] == "1.2.0"
     assert citation["type"] == "software"
-    assert citation["version"] == "0.1.0"
+    assert citation["version"] == "0.1.1"
     assert citation["license"] == "MIT"
     assert citation["authors"] == [{
         "given-names": "xuankun",
@@ -75,7 +75,7 @@ def test_citation_and_archive_metadata_are_valid_and_doi_free() -> None:
     assert "doi" not in {str(key).lower() for key in citation}
 
     archive = json.loads((ROOT / ".zenodo.json").read_text(encoding="utf-8"))
-    assert archive["version"] == "0.1.0"
+    assert archive["version"] == "0.1.1"
     assert archive["license"] == "MIT"
     assert archive["upload_type"] == "software"
     assert archive["creators"] == [{"name": "zheng, xuankun", "orcid": "0009-0006-7036-7811"}]

@@ -1,6 +1,6 @@
 # Known Limitations
 
-- Only Python 3.12 is certified for version 0.1.0.
+- Only Python 3.12 is certified for version 0.1.1.
 - CPU execution is the release baseline. GPU behavior can vary by driver, accelerator, and deterministic-kernel availability.
 - The package does not ingest clinical file formats or define a data-governance process.
 - DenseNet121 softmax outputs are uncalibrated model scores unless a study-specific calibration procedure is performed and validated.

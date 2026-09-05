@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "biomed-ml-workflows"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reproducible biomedical machine-learning workflows and scientific visualization"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"

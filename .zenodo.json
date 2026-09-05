@@ -9,7 +9,7 @@
   ],
   "description": "Reproducible biomedical machine-learning, medical-image deep-learning, survival-analysis, and scientific-visualization workflows.",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "biomedical machine learning",
     "deep learning",

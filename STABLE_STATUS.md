@@ -1,4 +1,6 @@
-# Stable baseline status
+# Stable baseline status (pre-v0.1.1)
+
+This historical freeze record describes the approved pre-release baseline. Current v0.1.1 preparation/publication status is maintained in [PUBLIC_RELEASE_STATUS.md](PUBLIC_RELEASE_STATUS.md); the recommendation below has now been authorized for release preparation.
 
 Software version: **0.1.0**. Validation date: **2026-09-05**.
 
