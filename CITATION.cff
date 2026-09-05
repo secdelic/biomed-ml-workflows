@@ -7,6 +7,7 @@ authors:
     family-names: zheng
     orcid: "https://orcid.org/0009-0006-7036-7811"
 version: 0.1.1
+doi: 10.5281/zenodo.22346004
 date-released: 2026-09-05
 repository-code: "https://github.com/secdelic/biomed-ml-workflows"
 license: MIT

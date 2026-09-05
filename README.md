@@ -84,7 +84,11 @@ Random seeds, partition roles, preprocessing fit boundaries, checkpoint selectio
 
 ## Citation
 
-Citation metadata are provided in [CITATION.cff](CITATION.cff). No DOI is claimed before archival assigns one.
+Preferred formal citation for **BioMed ML Workflows v0.1.1**: [Version DOI: 10.5281/zenodo.22346004](https://doi.org/10.5281/zenodo.22346004). Cite this fixed version rather than moving main.
+
+All versions / Concept DOI: [10.5281/zenodo.22346003](https://doi.org/10.5281/zenodo.22346003).
+
+See the [GitHub v0.1.1 Release](https://github.com/secdelic/biomed-ml-workflows/releases/tag/v0.1.1) and [CITATION.cff](CITATION.cff) for software and citation metadata.
 
 ## License
 

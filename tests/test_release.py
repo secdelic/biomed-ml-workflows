@@ -61,7 +61,7 @@ def test_document_links_resolve() -> None:
     assert missing == []
 
 
-def test_citation_and_archive_metadata_are_valid_and_doi_free() -> None:
+def test_citation_and_archive_metadata_are_valid() -> None:
     citation = yaml.safe_load((ROOT / "CITATION.cff").read_text(encoding="utf-8"))
     assert citation["cff-version"] == "1.2.0"
     assert citation["type"] == "software"
@@ -72,7 +72,7 @@ def test_citation_and_archive_metadata_are_valid_and_doi_free() -> None:
         "family-names": "zheng",
         "orcid": "https://orcid.org/0009-0006-7036-7811",
     }]
-    assert "doi" not in {str(key).lower() for key in citation}
+    assert citation["doi"] == "10.5281/zenodo.22346004"
 
     archive = json.loads((ROOT / ".zenodo.json").read_text(encoding="utf-8"))
     assert archive["version"] == "0.1.1"
